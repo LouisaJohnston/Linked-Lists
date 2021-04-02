@@ -98,7 +98,12 @@ class LinkedList:
 
   # return a [list] (regular python list) from all the values in the linked list
   def to_list(self):
-    pass
+    node_list = []
+    current_node = self.head
+    while current_node != None:
+      node_list.append(current_node.value)
+      current_node = current_node.next
+    return node_list
 
   # search for a given value in the list. 
   # If it is found, return True otherwise return False

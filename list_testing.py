@@ -17,4 +17,6 @@ our_list.append(67)
 
 # print('after pop', our_list)
 
-print(our_list.sum())
+# print(our_list.sum())
+
+print(our_list.to_list())
