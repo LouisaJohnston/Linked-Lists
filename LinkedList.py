@@ -108,7 +108,16 @@ class LinkedList:
   # search for a given value in the list. 
   # If it is found, return True otherwise return False
   def search(self, value):
-    pass
+    node_list = []
+    current_node = self.head
+    while current_node != None:
+      node_list.append(current_node.value)
+      current_node = current_node.next
+    while node_list != []:
+      if value in node_list:
+        return True
+      else:
+        return False
   
   # add a node with the given value to the beginning of the list
   # this doesn't need a loop -- remember the head is the beginning 

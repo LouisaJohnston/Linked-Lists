@@ -19,4 +19,4 @@ our_list.append(67)
 
 # print(our_list.sum())
 
-print(our_list.to_list())
+print(our_list.search(6))
